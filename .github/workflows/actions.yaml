@@ -5,7 +5,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint:
+  deploy:
+    name: build, lint, test, deploy
     runs-on: ubuntu-22.04
     steps:
       - name: checkout
@@ -25,5 +26,5 @@ jobs:
       - name: deploy
         run: |
           echo "deploying...."
-          sleep 
+          sleep 5
           echo "deployed successfully"
