@@ -1,4 +1,4 @@
-name: run on issues
+name: issues workflow
 
 on:
   issues:
